@@ -20,6 +20,4 @@ public class SleepyHead extends Thread {
         System.in.read();
         sleepy.interrupt();
     }
-
-
 }
