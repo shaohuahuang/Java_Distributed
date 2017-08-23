@@ -15,7 +15,9 @@ public class SleepyHead extends Thread {
 
     public static void main(String args[]) throws java.io.IOException{
         Thread sleepy = new SleepyHead();
+        sleepy.start();
+        System.out.println ("Press enter to interrupt the thread");
+        System.in.read();
+        sleepy.interrupt();
     }
-
-
 }
